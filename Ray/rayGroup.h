@@ -86,7 +86,7 @@ public:
 	/** This method reads in the transformation matrix from a .ray file. */
 	int read(FILE* fp);
 
-	/** This method sets the invers and normal transformations of the matrix.*/
+	/** This method sets the inverse and normal transformations of the matrix.*/
 	int set(void);
 
 	Matrix4D getMatrix(void);

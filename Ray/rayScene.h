@@ -14,7 +14,7 @@
 /** If a ray intersects a shape, the shape information at the point of intersection is stored in this structure. */
 struct RayIntersectionInfo {
 	/** The material of the intersected surface */
-	class RayMaterial* material;
+	class RayMaterial* material;	// Forward declaration + pointer member combination
 	/** The position, in world coordinates, of the intersection */
 	Point3D iCoordinate;
 	/** The normal of the shape at the point of intersection */
