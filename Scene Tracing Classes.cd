@@ -1,21 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="RayShape">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="6.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAAAAAgACAAAABAAACAgAAQAAAABAAEA=</HashCode>
       <FileName>Ray\rayShape.h</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bBox" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="StaticRayGroup">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAGAAAAAABIECQAAAAAAAAACIAAAAAAAAAEQAA=</HashCode>
       <FileName>Ray\rayGroup.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RayFile">
-    <Position X="0.5" Y="8.5" Width="1.5" />
+    <Position X="2.25" Y="8.25" Width="1.5" />
     <Compartments>
       <Compartment Name="Methods" Collapsed="true" />
       <Compartment Name="Fields" Collapsed="true" />
@@ -26,53 +29,132 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RayFileInstance">
-    <Position X="0.5" Y="5.5" Width="1.5" />
+    <Position X="2.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAQAAAAAAAAAAAgACAAAABAAACAAAAQgAAAAAAAA=</HashCode>
       <FileName>Ray\rayFileInstance.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RayGroup">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAEACBAAAAIEgACAAAABAQAEAQAIQAAAAAERCA=</HashCode>
       <FileName>Ray\rayGroup.h</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="shapes" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="RaySphere">
-    <Position X="2.25" Y="5.5" Width="1.5" />
+    <Position X="4.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACgAAAAACAAAAAAAAiACgAAABAAAAAAAAQAAAABAAAA=</HashCode>
       <FileName>Ray\raySphere.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RayScene">
-    <Position X="2.25" Y="9.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QLgRAAAQAkCgBAACKCICoAAJQAIYAACBAQAAAABAIQA=</HashCode>
       <FileName>Ray\rayScene.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="RayLight">
-    <Position X="5" Y="9" Width="1.5" />
+  <Class Name="RayLight" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAABAAAAAACAAAoAAAAAAAACAAYAAAAAAAAA=</HashCode>
       <FileName>Ray\rayLight.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RayBox">
-    <Position X="4" Y="5.5" Width="1.5" />
+    <Position X="6" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACgAAAAAAAAAAAAAAmACAAAQBAAAAAAAAQAAAABAAAA=</HashCode>
       <FileName>Ray\rayBox.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="RayMaterial">
-    <Position X="7.25" Y="6.75" Width="1.5" />
+  <Class Name="RayMaterial" Collapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>QCAACAAAAAAAAAAAAKAgEAIAAAAAAAAAAQAEAABBAAg=</HashCode>
+      <HashCode>QCAACAAAAAACAAAAAKAAEAIAAAAAAAAAAQAEAABBAAg=</HashCode>
       <FileName>Ray\rayScene.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="RayPointLight" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAQAAAABgAAAAACAAAoACAAACAAAAAYAAAAAAAAA=</HashCode>
+      <FileName>Ray\rayPointLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RayShapeHit">
+    <Position X="10.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAABAA=</HashCode>
+      <FileName>Ray\rayGroup.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RayDirectionalLight" Collapsed="true">
+    <Position X="13.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAABAIAAAACAAAoAAAAAAAAAAAYAAAAAAAAA=</HashCode>
+      <FileName>Ray\rayDirectionalLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BoundingBox3D">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAABIAEAAAAAEAgAAAAAAA=</HashCode>
+      <FileName>Util\geometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RayCamera" Collapsed="true">
+    <Position X="13.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAABAAAAIAAAACQAIQACAAgAAAAAAwAAAkAAgAA=</HashCode>
+      <FileName>Ray\rayCamera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ray3D">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAIAAAEAAAIQAAAgAAAAAAAAAgAAACAAA=</HashCode>
+      <FileName>Util\geometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Point3D">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIECAgAAAAAEAIAQACAgEAAAQAQEAgAAIDAAA=</HashCode>
+      <FileName>Util\geometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plane3D" Collapsed="true">
+    <Position X="13" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAEAAAAAgAAEIgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Util\geometry.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RayVertex" Collapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgACAAIAgAAAAAAAAAAQAAAAABAAA=</HashCode>
+      <FileName>Ray\rayScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="RayIntersectionInfo">
+    <Position X="10.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAgAAAIAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Ray\rayScene.h</FileName>
+    </TypeIdentifier>
+  </Struct>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

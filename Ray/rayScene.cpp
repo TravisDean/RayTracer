@@ -43,7 +43,7 @@ RayMaterial::RayMaterial(void){
 	specularFallOff=0;
 	refind=1;
 	tex=NULL;
-	this->foo[0]=0;
+	this->params[0]=0;
 }
 int RayMaterial::read(FILE* fp,int& temp){
 	if(fscanf(fp," %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %lg %d !%s!",
@@ -54,9 +54,9 @@ int RayMaterial::read(FILE* fp,int& temp){
 		&(transparent[0]),&(transparent[1]),&(transparent[2]),
 		&(refind),
 		&temp,
-		foo) != 19){return 0;}
+		params) != 19){return 0;}
 	else{
-		if(foo[strlen(foo)-1]=='!'){foo[strlen(foo)-1]='\0';}
+		if(params[strlen(params)-1]=='!'){params[strlen(params)-1]='\0';}
 		return 1;
 	}
 }
@@ -73,7 +73,7 @@ void RayMaterial::write(FILE* fp){
 	fprintf(fp,"   %lg %lg %lg\n",transparent[0],transparent[1],transparent[2]);
 	fprintf(fp,"   %lg\n",refind);
 	fprintf(fp,"   %d\n",i);
-	fprintf(fp,"   !%s!\n",foo);
+	fprintf(fp,"   !%s!\n",params);
 }
 
 

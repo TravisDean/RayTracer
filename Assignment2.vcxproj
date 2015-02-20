@@ -383,6 +383,7 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="SVD\MatrixMNTC.inl" />
     <None Include="Util\parameterSamples.todo.inl" />
     <None Include="SVD\SVD.inl" />

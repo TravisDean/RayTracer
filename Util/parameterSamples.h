@@ -1,6 +1,10 @@
 #ifndef PARAMETER_SAMPLES_INCLUDED 
 #define PARAMETER_SAMPLES_INCLUDED
 
+/** Travis Notes:
+	Badly needs refactoring. Unnamed, global space enums? WTF
+	Template type name Vector? That's just asking for misunderstanding.
+	*/
 enum{
 	LINEAR,
 	CATMULL_ROM,

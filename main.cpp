@@ -15,9 +15,6 @@ void ShowUsage(const char* c){
 	printf("\t --rLimit <recursion limit> --cLimit <cut-off>\n");
 }
 
-void wait() {
-	char t; cin >> t;
-}
 int main(int argc,char* argv[]){
 	Image32 img;
 	RayScene scene;
@@ -48,12 +45,10 @@ int main(int argc,char* argv[]){
 	}
 	catch (std::exception& e) {
 		 cout << "Exception occured:\n" << e.what() << endl;
-		 //wait();
 		 return EXIT_FAILURE;
 	}
 	catch (...) {
 		cout << "Some sort of problem occurred." << endl;
-		//wait();
 		return EXIT_FAILURE;
 	}
 

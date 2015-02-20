@@ -1,24 +1,42 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22512.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment2", "Assignment2.vcxproj", "{2080F24C-8FD2-4C11-9BB0-5C1CAC870B8C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JPEG", "JPEG.vcxproj", "{86D9F642-C0C3-46EF-B5F0-843909DD8903}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "..\ModelingProject1\ModelingProject1.modelproj", "{2A345AF0-1A15-4695-8A05-F9A6C70A5338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2080F24C-8FD2-4C11-9BB0-5C1CAC870B8C}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{2080F24C-8FD2-4C11-9BB0-5C1CAC870B8C}.Debug|Win32.ActiveCfg = Debug|Win32
 		{2080F24C-8FD2-4C11-9BB0-5C1CAC870B8C}.Debug|Win32.Build.0 = Debug|Win32
+		{2080F24C-8FD2-4C11-9BB0-5C1CAC870B8C}.Release|Any CPU.ActiveCfg = Release|Win32
 		{2080F24C-8FD2-4C11-9BB0-5C1CAC870B8C}.Release|Win32.ActiveCfg = Release|Win32
 		{2080F24C-8FD2-4C11-9BB0-5C1CAC870B8C}.Release|Win32.Build.0 = Release|Win32
+		{86D9F642-C0C3-46EF-B5F0-843909DD8903}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{86D9F642-C0C3-46EF-B5F0-843909DD8903}.Debug|Win32.ActiveCfg = Debug|Win32
 		{86D9F642-C0C3-46EF-B5F0-843909DD8903}.Debug|Win32.Build.0 = Debug|Win32
+		{86D9F642-C0C3-46EF-B5F0-843909DD8903}.Release|Any CPU.ActiveCfg = Release|Win32
 		{86D9F642-C0C3-46EF-B5F0-843909DD8903}.Release|Win32.ActiveCfg = Release|Win32
 		{86D9F642-C0C3-46EF-B5F0-843909DD8903}.Release|Win32.Build.0 = Release|Win32
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Debug|Win32.Build.0 = Debug|Any CPU
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Release|Win32.ActiveCfg = Release|Any CPU
+		{2A345AF0-1A15-4695-8A05-F9A6C70A5338}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

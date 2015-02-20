@@ -65,7 +65,7 @@ public:
 	/** A pointer to the texture associated with a surface */
 	class RayTexture *tex;
 	/** A string for storing additional material parameters specified by the user */
-	char foo[STRING_BUFFER_SIZE];
+	char params[STRING_BUFFER_SIZE];
 
 	RayMaterial(void);
 
